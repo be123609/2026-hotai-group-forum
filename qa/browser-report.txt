@@ -1,0 +1,20 @@
+mode	page	status	title	main	overflow	console_errors	stale_terms	pass
+desktop	index.html	200	首頁｜2026和泰汽車集團管理論壇	1	False	0	0	True
+desktop	agenda.html	200	活動議程｜2026和泰汽車集團管理論壇	1	False	0	0	True
+desktop	speakers.html	200	講者介紹｜2026和泰汽車集團管理論壇	1	False	0	0	True
+desktop	checkin.html	200	活動報到｜2026和泰汽車集團管理論壇	1	False	0	0	True
+desktop	seating.html	200	座位圖｜2026和泰汽車集團管理論壇	1	False	0	0	True
+desktop	resources.html	200	會後資料｜2026和泰汽車集團管理論壇	1	False	0	0	True
+desktop	venue.html	200	活動地點與交通｜2026和泰汽車集團管理論壇	1	False	0	0	True
+desktop	404.html	200	找不到頁面｜2026和泰汽車集團管理論壇	1	False	0	0	True
+mobile	index.html	200	首頁｜2026和泰汽車集團管理論壇	1	False	0	0	True
+mobile	agenda.html	200	活動議程｜2026和泰汽車集團管理論壇	1	False	0	0	True
+mobile	speakers.html	200	講者介紹｜2026和泰汽車集團管理論壇	1	False	0	0	True
+mobile	checkin.html	200	活動報到｜2026和泰汽車集團管理論壇	1	False	0	0	True
+mobile	seating.html	200	座位圖｜2026和泰汽車集團管理論壇	1	False	0	0	True
+mobile	resources.html	200	會後資料｜2026和泰汽車集團管理論壇	1	False	0	0	True
+mobile	venue.html	200	活動地點與交通｜2026和泰汽車集團管理論壇	1	False	0	0	True
+mobile	404.html	200	找不到頁面｜2026和泰汽車集團管理論壇	1	False	0	0	True
+
+Checked: fixed A layout, 7 decoration icons, no delivery page/link, current names/time, home contacts, 9 agenda items/durations, check-in, 85 meeting seats, 72 dinner records with company/name/unit/title, 5 presentations, exact venue URLs/text, mobile navigation.
+Failures: []
