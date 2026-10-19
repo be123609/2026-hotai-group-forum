@@ -120,9 +120,19 @@
     return `<section class="seat-section reveal" id="meeting-seating"><div class="seat-section__head"><div><h2>${seating.meeting.title}</h2><p>${seating.meeting.venue}</p></div><span class="seat-count">85 位</span></div><div class="room-scroll" tabindex="0" aria-label="可水平捲動查看完整會議座位圖"><div class="meeting-room" style="--grid-cols:${seating.meeting.gridColumns}">${features}${people}</div></div><p class="scroll-help">在小螢幕上可左右滑動查看完整空間配置。</p></section>`;
   }
 
-  function renderDinnerMap() {
-    return `<section class="seat-section reveal" id="dinner-seating"><div class="seat-section__head"><div><h2>${seating.dinner.title}</h2><p>${seating.dinner.venue}</p></div><span class="seat-count">72 位／7 桌</span></div><div class="dinner-room"><div class="dinner-tables">${seating.dinner.tables.map(t=>`<article class="dinner-table"><header><span>${t.id}</span><div><h3>${t.label}</h3><small>${t.count} 人</small></div></header><ul>${t.people.map(person=>`<li><span>${person.company}</span><strong>${person.name}</strong><small>${person.unit}</small><em>${person.title}</em></li>`).join("")}</ul></article>`).join("")}</div></div></section>`;
-  }
+  function getUnitTitle(person) {
+  const unit = (person.unit || "").trim();
+  const title = (person.title || "").trim();
+
+  if (!unit) return title;
+  if (!title) return unit;
+  if (unit.includes(title)) return unit;
+
+  return `${unit} ${title}`;
+}
+function renderDinnerMap() {
+  return `<section class="seat-section reveal" id="dinner-seating"><div class="seat-section__head"><div><h2>${seating.dinner.title}</h2><p>${seating.dinner.venue}</p></div><span class="seat-count">72 位／7 桌</span></div><div class="dinner-room"><div class="dinner-tables">${seating.dinner.tables.map(t=>`<article class="dinner-table"><header><span>${t.id}</span><div><h3>${t.label}</h3><small>${t.count} 人</small></div></header><ul>${t.people.map(person=>`<li><span>${person.company || ""}</span><strong>${person.name || ""}</strong><small>${getUnitTitle(person)}</small></li>`).join("")}</ul></article>`).join("")}</div></div></section>`;
+}
 
   function renderSeating() {
     return `<main id="main-content">${pageIntro("座位資訊", "座位圖")}
