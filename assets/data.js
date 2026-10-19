@@ -4,7 +4,7 @@ window.EVENT_CONFIG = Object.freeze({
     englishName: "2026 HOTAI GROUP MANAGEMENT FORUM",
     timeDisplay: "2026/10/22（四）上午10:00 至晚上 19:00",
     organizer: "和泰汽車股份有限公司",
-    venueName: "台北士林萬麗酒店 2樓 金萱廳",
+    venueName: "台北士林萬麗酒店",
     address: "台北市士林區中山北路五段470巷8號",
     meetingVenue: "2樓 金萱廳",
     lunchVenue: "1樓 士林廚房自助餐廳",
