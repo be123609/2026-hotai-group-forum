@@ -94,7 +94,7 @@
   }
 
   function renderAgenda() {
-    return `<main id="main-content">${pageIntro(event.englishName, "活動議程")}
+    return `<main id="main-content">${pageIntro("Agenda", "活動議程")}
       <section class="section"><div class="shell agenda-page"><div class="agenda-panel reveal"><div class="agenda-toolbar"><div><span class="status status--ready">活動議程</span><h2>2026/10/22（四）</h2></div></div><div class="agenda-timeline" aria-label="活動議程">${config.agenda.map(item=>`<article class="agenda-item agenda-item--${item.type}"><div class="agenda-time"><time>${item.time}</time><small>${item.duration}</small></div><div><h3>${item.title}</h3>${item.details.length ? `<ul>${item.details.map(d=>`<li>${d}</li>`).join("")}</ul>` : ""}</div></article>`).join("")}</div></div>
         <aside class="side-card reveal delay-1"><p class="kicker">活動資訊</p><h2>${event.name}</h2><dl class="mini-details"><div><dt>活動時間</dt><dd>${event.timeDisplay}</dd></div><div><dt>會議場地</dt><dd>${event.meetingVenue}</dd></div><div><dt>午宴場地</dt><dd>${event.lunchVenue}</dd></div><div><dt>晚宴場地</dt><dd>${event.dinnerVenue}</dd></div></dl></aside>
       </div></section>
@@ -102,14 +102,14 @@
   }
 
   function renderSpeakers() {
-    return `<main id="main-content">${pageIntro("專題講者", "講者介紹")}
+    return `<main id="main-content">${pageIntro("Speakers", "講者介紹")}
       <section class="section"><div class="shell speaker-list">${config.speakers.map((s,index)=>`<article class="profile reveal" id="${s.id}"><figure class="profile__visual profile__visual--${s.accent}"><img src="${s.photo}" alt="${s.photoAlt}" loading="lazy"><b>0${index+1}</b></figure><div class="profile__content"><div class="status-row"><span class="status status--ready">${s.eventRole}</span><span class="status status--source">正式照片</span></div><h2>${s.zhName} <small>${s.enName}</small></h2><p class="profile__role">${s.role}</p><div class="session-callout"><small>分享主題</small><strong>${s.sessionTitle}</strong></div>${s.summary?`<p class="profile__summary">${s.summary}</p>`:""}<div class="profile__columns"><div><h3>專長</h3><div class="tag-list">${s.specialties.map(tag=>`<span>${tag}</span>`).join("")}</div></div>${s.education?`<div><h3>學歷</h3><ul class="clean-list">${s.education.map(i=>`<li>${i}</li>`).join("")}</ul></div>`:""}<div><h3>經歷摘錄</h3><ul class="clean-list">${s.experience.map(i=>`<li>${i}</li>`).join("")}</ul></div></div><a class="source-link" href="${s.sourceUrl}" target="_blank" rel="noopener noreferrer">查看資料來源：${s.sourceLabel} <span aria-hidden="true">↗</span></a></div></article>`).join("")}</div></section>
     </main>`;
   }
 
   function renderCheckin() {
     const url = config.integrations.checkinFormUrl;
-    return `<main id="main-content">${pageIntro("活動報到", "活動報到")}
+    return `<main id="main-content">${pageIntro("Check-in", "活動報到")}
       <section class="section"><div class="shell form-embed-shell"><div class="form-embed__toolbar reveal"><div><h2>${event.name}報到</h2></div><a class="button button--ghost" href="${url}" target="_blank" rel="noopener noreferrer">另開視窗填寫 ${icons.arrow}</a></div><div class="form-embed reveal delay-1"><iframe src="${url}" title="${event.name}活動報到表單" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="fullscreen"></iframe><div class="form-embed__fallback"><strong>表單無法顯示嗎？</strong><p>部分瀏覽器、登入狀態或公司網路會限制第三方內嵌內容。</p><a href="${url}" target="_blank" rel="noopener noreferrer">開啟活動報到表單</a></div></div></div></section>
     </main>`;
   }
@@ -135,14 +135,14 @@ function renderDinnerMap() {
 }
 
   function renderSeating() {
-    return `<main id="main-content">${pageIntro("座位資訊", "座位圖")}
+    return `<main id="main-content">${pageIntro("Seating", "座位圖")}
       <section class="section"><div class="shell seating-page"><nav class="seat-jump" aria-label="座位圖頁內導覽"><a href="#meeting-seating">會議座位圖</a><a href="#dinner-seating">晚宴座位圖</a></nav>${renderMeetingMap()}${renderDinnerMap()}</div></section>
     </main>`;
   }
 
   function renderResources() {
     const survey = config.integrations.surveyCakeUrl;
-    return `<main id="main-content">${pageIntro("活動後回饋", "會後資料")}
+    return `<main id="main-content">${pageIntro("Feedback & Resources", "會後資料")}
       <section class="section"><div class="shell resource-page"><section class="survey-card reveal"><div class="survey-card__icon">${icons.document}</div><div><span class="status status--ready">問卷連結</span><p class="kicker">SurveyCake</p><h2>滿意度調查問卷</h2><p>感謝參與 ${event.name}。請於活動後填寫問卷，協助主辦單位持續改善活動內容與體驗。</p><a class="button button--primary" href="${survey}" target="_blank" rel="noopener noreferrer">前往填寫問卷 ${icons.arrow}</a><small>連結將於新分頁開啟。</small></div></section>
         <section class="presentation-section reveal"><div class="section-heading"><div><p class="kicker">活動資料</p><h2>會後簡報</h2></div><p>簡報下載將於會後提供。</p></div><div class="presentation-grid">${config.presentations.map((title,index)=>`<article><span>0${index+1}</span><h3>${title}</h3><button class="button button--disabled" type="button" disabled>會後提供</button></article>`).join("")}</div></section>
       </div></section>
