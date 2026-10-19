@@ -89,7 +89,7 @@
         ["06","活動地點","查看會議場地及交通資訊。","venue.html"]
       ].map(item=>`<a class="journey-card reveal" href="${item[3]}"><span>${item[0]}</span><h3>${item[1]}</h3><p>${item[2]}</p><b>開啟頁面 ${icons.arrow}</b></a>`).join("")}</div></div></section>
       <section class="section section--contrast"><div class="shell"><div class="section-heading reveal"><div><p class="kicker">專題講者</p><h2>講者與分享主題</h2></div></div><div class="speaker-preview-grid">${config.speakers.map(speakerCard).join("")}</div></div></section>
-      <section class="section"><div class="shell home-bottom-grid"><div class="data-banner reveal"><div><p class="kicker">活動後回饋</p><h2>滿意度調查問卷</h2><p>活動結束後，請使用 SurveyCake 問卷提供回饋。</p></div><a class="button button--primary" href="${config.integrations.surveyCakeUrl}" target="_blank" rel="noopener noreferrer">填寫滿意度調查 ${icons.arrow}</a></div><div class="reveal">${contactBlock(true)}</div></div></section>
+      <section class="section"><div class="shell home-bottom-grid"><div class="data-banner reveal"><div><p class="kicker">活動後回饋</p><h2>滿意度調查問卷</h2><p>活動結束後，請填寫滿意度調查問卷，協助持續改善活動流程。</p></div><a class="button button--primary" href="${config.integrations.surveyCakeUrl}" target="_blank" rel="noopener noreferrer">填寫滿意度調查 ${icons.arrow}</a></div><div class="reveal">${contactBlock(true)}</div></div></section>
     </main>`;
   }
 
@@ -102,7 +102,7 @@
   }
 
   function renderSpeakers() {
-    return `<main id="main-content">${pageIntro("專題講者", "講者介紹", "講者照片依指定附件套用，人物資料與外部來源連結完整保留。")}
+    return `<main id="main-content">${pageIntro("專題講者", "講者介紹")}
       <section class="section"><div class="shell speaker-list">${config.speakers.map((s,index)=>`<article class="profile reveal" id="${s.id}"><figure class="profile__visual profile__visual--${s.accent}"><img src="${s.photo}" alt="${s.photoAlt}" loading="lazy"><b>0${index+1}</b></figure><div class="profile__content"><div class="status-row"><span class="status status--ready">${s.eventRole}</span><span class="status status--source">正式照片</span></div><h2>${s.zhName} <small>${s.enName}</small></h2><p class="profile__role">${s.role}</p><div class="session-callout"><small>分享主題</small><strong>${s.sessionTitle}</strong></div>${s.summary?`<p class="profile__summary">${s.summary}</p>`:""}<div class="profile__columns"><div><h3>專長</h3><div class="tag-list">${s.specialties.map(tag=>`<span>${tag}</span>`).join("")}</div></div>${s.education?`<div><h3>學歷</h3><ul class="clean-list">${s.education.map(i=>`<li>${i}</li>`).join("")}</ul></div>`:""}<div><h3>經歷摘錄</h3><ul class="clean-list">${s.experience.map(i=>`<li>${i}</li>`).join("")}</ul></div></div><a class="source-link" href="${s.sourceUrl}" target="_blank" rel="noopener noreferrer">查看資料來源：${s.sourceLabel} <span aria-hidden="true">↗</span></a></div></article>`).join("")}</div></section>
     </main>`;
   }
