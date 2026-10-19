@@ -664,8 +664,7 @@ window.SEATING_DATA = Object.freeze({
           {
             "company": "南都",
             "name": "陳宗豪",
-            "unit": "管理本部",
-            "title": "總經理 並任 本部長"
+            "unit": "管理本部 總經理 並任 本部長",
           },
           {
             "company": "中部",
