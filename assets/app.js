@@ -81,12 +81,12 @@
         <aside class="event-pass reveal delay-1" aria-label="活動資訊摘要"><div class="event-pass__top"><span>活動資訊</span></div><div class="event-pass__title"><small>會議地點</small><strong>${event.venueName}</strong></div><dl class="event-pass__meta"><div><dt>${icons.calendar}<span>活動時間</span></dt><dd>${event.timeDisplay}</dd></div><div><dt>${icons.pin}<span>地址</span></dt><dd>${event.address}</dd></div><div><dt>${icons.user}<span>主辦單位</span></dt><dd>${event.organizer}</dd></div></dl><a class="event-pass__link" href="venue.html">查看場地與交通 ${icons.arrow}</a></aside>
       </div><a class="scroll-cue" href="#highlights"><span>向下探索</span><i></i></a></section>
       <section class="section" id="highlights"><div class="shell"><div class="section-heading reveal"><div><h2>活動導覽</h2></div></div><div class="journey-grid">${[
-        ["01","活動議程","從報到、專題講座、方針說明到交流晚宴。","agenda.html"],
-        ["02","講者介紹","查看朱建平與蘇書平的講題、照片及資料來源。","speakers.html"],
-        ["03","線上報到","直接填寫活動報到表單。","checkin.html"],
-        ["04","座位圖","查看會議座位配置與晚宴七桌分桌名單。","seating.html"],
-        ["05","會後資料","填寫滿意度問卷，並查看會後簡報提供狀態。","resources.html"],
-        ["06","活動地點","查看金萱廳、士林廚房、龍井廳及交通資訊。","venue.html"]
+        ["01","活動議程","查看完整活動議程。","agenda.html"],
+        ["02","講者介紹","查看專題講者介紹與講題。","speakers.html"],
+        ["03","線上報到","填寫活動報到表單。","checkin.html"],
+        ["04","座位圖","查看會議座位配置與晚宴分桌名單。","seating.html"],
+        ["05","會後資料","填寫滿意度問卷，會後將提供簡報資料參考。","resources.html"],
+        ["06","活動地點","查看會議場地及交通資訊。","venue.html"]
       ].map(item=>`<a class="journey-card reveal" href="${item[3]}"><span>${item[0]}</span><h3>${item[1]}</h3><p>${item[2]}</p><b>開啟頁面 ${icons.arrow}</b></a>`).join("")}</div></div></section>
       <section class="section section--contrast"><div class="shell"><div class="section-heading reveal"><div><p class="kicker">專題講者</p><h2>講者與分享主題</h2></div></div><div class="speaker-preview-grid">${config.speakers.map(speakerCard).join("")}</div></div></section>
       <section class="section"><div class="shell home-bottom-grid"><div class="data-banner reveal"><div><p class="kicker">活動後回饋</p><h2>滿意度調查問卷</h2><p>活動結束後，請使用 SurveyCake 問卷提供回饋。</p></div><a class="button button--primary" href="${config.integrations.surveyCakeUrl}" target="_blank" rel="noopener noreferrer">填寫滿意度調查 ${icons.arrow}</a></div><div class="reveal">${contactBlock(true)}</div></div></section>
