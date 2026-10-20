@@ -926,7 +926,7 @@ window.SEATING_DATA = Object.freeze({
       {
         "id": 5,
         "label": "第五桌",
-        "count": 10,
+        "count": 11,
         "people": [
           {
             "company": "高都",
@@ -965,6 +965,12 @@ window.SEATING_DATA = Object.freeze({
             "title": "室長"
           },
           {
+            "company": "車美仕",
+            "name": "蘇立瑋",
+            "unit": "管理部財務總務室",
+            "title": "室長"
+          },
+          {
             "company": "和運",
             "name": "李威毅",
             "unit": "管理部總務室",
@@ -993,7 +999,7 @@ window.SEATING_DATA = Object.freeze({
       {
         "id": 6,
         "label": "第六桌",
-        "count": 11,
+        "count": 10,
         "people": [
           {
             "company": "高都",
@@ -1023,12 +1029,6 @@ window.SEATING_DATA = Object.freeze({
             "company": "車美仕",
             "name": "陳俊瑩",
             "unit": "管理部人才發展室",
-            "title": "室長"
-          },
-          {
-            "company": "車美仕",
-            "name": "蘇立瑋",
-            "unit": "管理部財務總務室",
             "title": "室長"
           },
           {
