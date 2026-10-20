@@ -114,7 +114,7 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.15; }
 .journey-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line-dark); border-left: 1px solid var(--line-dark); }
 .journey-card { min-height: 280px; display: flex; flex-direction: column; padding: 29px; border-right: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); transition: background .25s ease, transform .25s ease; }
 .journey-card:hover { z-index: 1; background: linear-gradient(135deg, #e4f7ff, #eee8ff); color: var(--ink); transform: translateY(-4px); }
-.journey-card > span { margin-bottom: auto; color: var(--accent-strong); font-size: 12px; font-weight: 900; letter-spacing: .12em; }
+.journey-card > span { margin-bottom: auto; color: var(--accent-strong); font-size: 20px; font-weight: 900; letter-spacing: .12em; }
 .journey-card h3 { margin: 36px 0 9px; font-size: 25px; }
 .journey-card p { color: var(--muted-dark); }
 .journey-card:hover p { color: var(--muted); }
