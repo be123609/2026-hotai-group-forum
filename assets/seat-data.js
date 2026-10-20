@@ -169,7 +169,7 @@ window.SEATING_DATA = Object.freeze({
         "group": 2,
         "col": 11,
         "excelCol": "M",
-        "company": "車銷",
+        "company": "車體銷售",
         "name": "廖文山"
       },
       {
@@ -232,7 +232,7 @@ window.SEATING_DATA = Object.freeze({
         "group": 3,
         "col": 6,
         "excelCol": "H",
-        "company": "車製",
+        "company": "車體製造",
         "name": "彭欣怡"
       },
       {
@@ -288,7 +288,7 @@ window.SEATING_DATA = Object.freeze({
         "group": 3,
         "col": 16,
         "excelCol": "R",
-        "company": "物搬",
+        "company": "物料運搬",
         "name": "陳信宏"
       },
       {
@@ -526,7 +526,7 @@ window.SEATING_DATA = Object.freeze({
         "group": 6,
         "col": 9,
         "excelCol": "K",
-        "company": "車銷",
+        "company": "車體銷售",
         "name": "鄭湘瓈"
       },
       {
@@ -679,12 +679,6 @@ window.SEATING_DATA = Object.freeze({
             "title": "本部長"
           },
           {
-            "company": "興業",
-            "name": "莊郁仁",
-            "unit": "聯勤總處",
-            "title": "副總經理"
-          },
-          {
             "company": "桃苗",
             "name": "陳惠旭",
             "unit": "管理本部",
@@ -712,6 +706,12 @@ window.SEATING_DATA = Object.freeze({
             "company": "北都",
             "name": "郭信賢",
             "unit": "管理本部",
+            "title": "副本部長"
+          },
+          {
+            "company": "和潤",
+            "name": "林淑婷",
+            "unit": "經營企劃管理本部",
             "title": "副本部長"
           },
           {
@@ -758,10 +758,10 @@ window.SEATING_DATA = Object.freeze({
             "title": "部長"
           },
           {
-            "company": "和潤",
-            "name": "林淑婷",
-            "unit": "經營企劃管理本部",
-            "title": "副本部長"
+            "company": "南都",
+            "name": "邱茗惠",
+            "unit": "管理部",
+            "title": "部長"
           },
           {
             "company": "中部",
@@ -797,12 +797,6 @@ window.SEATING_DATA = Object.freeze({
           {
             "company": "車美仕",
             "name": "彭耘慧",
-            "unit": "管理部",
-            "title": "部長"
-          },
-          {
-            "company": "南都",
-            "name": "邱茗惠",
             "unit": "管理部",
             "title": "部長"
           },
@@ -849,6 +843,12 @@ window.SEATING_DATA = Object.freeze({
             "title": "部長"
           },
           {
+            "company": "桃苗",
+            "name": "許辰遠",
+            "unit": "管理部",
+            "title": "副部長"
+          },
+          {
             "company": "和泰",
             "name": "陳玟伶",
             "unit": "人才發展室",
@@ -861,12 +861,6 @@ window.SEATING_DATA = Object.freeze({
         "label": "第四桌",
         "count": 10,
         "people": [
-          {
-            "company": "桃苗",
-            "name": "許辰遠",
-            "unit": "管理部",
-            "title": "副部長"
-          },
           {
             "company": "北都",
             "name": "呂學樑",
@@ -920,6 +914,12 @@ window.SEATING_DATA = Object.freeze({
             "name": "蔡子萱",
             "unit": "人才資產運用室",
             "title": "室長"
+          },
+          {
+            "company": "和泰",
+            "name": "李明佳",
+            "unit": "人才發展室",
+            "title": "課長"
           }
         ]
       },
@@ -1066,7 +1066,7 @@ window.SEATING_DATA = Object.freeze({
       {
         "id": 7,
         "label": "第七桌",
-        "count": 11,
+        "count": 10,
         "people": [
           {
             "company": "興業",
@@ -1079,12 +1079,6 @@ window.SEATING_DATA = Object.freeze({
             "name": "高妍珏",
             "unit": "人資部",
             "title": "主任"
-          },
-          {
-            "company": "和泰",
-            "name": "李明佳",
-            "unit": "人才發展室",
-            "title": "課長"
           },
           {
             "company": "和泰",
