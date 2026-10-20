@@ -131,7 +131,7 @@
   return `${unit} ${title}`;
 }
 function renderDinnerMap() {
-  return `<section class="seat-section reveal" id="dinner-seating"><div class="seat-section__head"><div><h2>${seating.dinner.title}</h2><p>${seating.dinner.venue}</p></div><span class="seat-count">72 位／7 桌</span></div><div class="dinner-room"><div class="dinner-tables">${seating.dinner.tables.map(t=>`<article class="dinner-table"><header><span>${t.id}</span><div><h3>${t.label}</h3><small>${t.count} 人</small></div></header><ul>${t.people.map(person=>`<li><span>${person.company || ""}</span><strong>${person.name || ""}</strong><small>${getUnitTitle(person)}</small></li>`).join("")}</ul></article>`).join("")}</div></div></section>`;
+  return `<section class="seat-section reveal" id="dinner-seating"><div class="seat-section__head"><div><h2>${seating.dinner.title}</h2><p>${seating.dinner.venue}</p></div><span class="seat-count">71 位／7 桌</span></div><div class="dinner-room"><div class="dinner-tables">${seating.dinner.tables.map(t=>`<article class="dinner-table"><header><span>${t.id}</span><div><h3>${t.label}</h3><small>${t.count} 人</small></div></header><ul>${t.people.map(person=>`<li><span>${person.company || ""}</span><strong>${person.name || ""}</strong><small>${getUnitTitle(person)}</small></li>`).join("")}</ul></article>`).join("")}</div></div></section>`;
 }
 
   function renderSeating() {
