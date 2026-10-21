@@ -99,15 +99,15 @@ window.SEATING_DATA = Object.freeze({
         "group": 1,
         "col": 17,
         "excelCol": "S",
-        "company": " ",
-        "name": " "
+        "company": "車美仕",
+        "name": "黃文秋"
       },
       {
         "group": 2,
         "col": 1,
         "excelCol": "C",
         "company": "車美仕",
-        "name": "黃文秋"
+        "name": "彭耘慧"
       },
       {
         "group": 2,
@@ -134,8 +134,8 @@ window.SEATING_DATA = Object.freeze({
         "group": 2,
         "col": 6,
         "excelCol": "H",
-        "company": "車美仕",
-        "name": "彭耘慧"
+        "company": "和泰",
+        "name": "陳玟伶"
       },
       {
         "group": 2,
@@ -155,8 +155,8 @@ window.SEATING_DATA = Object.freeze({
         "group": 2,
         "col": 9,
         "excelCol": "K",
-        "company": "和潤",
-        "name": "林淑婷"
+        "company": "產險",
+        "name": "許志逢"
       },
       {
         "group": 2,
@@ -197,15 +197,15 @@ window.SEATING_DATA = Object.freeze({
         "group": 2,
         "col": 17,
         "excelCol": "S",
-        "company": "產險",
-        "name": "許志逢"
+        "company": "和潤",
+        "name": "林淑婷"
       },
       {
         "group": 3,
         "col": 1,
         "excelCol": "C",
-        "company": "和泰",
-        "name": "陳玟伶"
+        "company": "和運",
+        "name": "陳佩君"
       },
       {
         "group": 3,
@@ -232,8 +232,8 @@ window.SEATING_DATA = Object.freeze({
         "group": 3,
         "col": 6,
         "excelCol": "H",
-        "company": "和運",
-        "name": "陳佩君"
+        "company": "高都",
+        "name": "劉耕佑"
       },
       {
         "group": 3,
@@ -302,8 +302,8 @@ window.SEATING_DATA = Object.freeze({
         "group": 4,
         "col": 1,
         "excelCol": "C",
-        "company": "高都",
-        "name": "楊舒雯"
+        "company": "和泰",
+        "name": "林彥良"
       },
       {
         "group": 4,
@@ -323,8 +323,8 @@ window.SEATING_DATA = Object.freeze({
         "group": 4,
         "col": 4,
         "excelCol": "F",
-        "company": "和泰",
-        "name": "林彥良"
+        "company": "高都",
+        "name": "楊舒雯"
       },
       {
         "group": 4,
@@ -351,8 +351,8 @@ window.SEATING_DATA = Object.freeze({
         "group": 4,
         "col": 9,
         "excelCol": "K",
-        "company": "高都",
-        "name": "劉耕佑"
+        "company": "產險",
+        "name": "張沁如"
       },
       {
         "group": 4,
@@ -449,8 +449,8 @@ window.SEATING_DATA = Object.freeze({
         "group": 5,
         "col": 9,
         "excelCol": "K",
-        "company": "產險",
-        "name": "張沁如"
+        "company": "和泰",
+        "name": "蔡子萱"
       },
       {
         "group": 5,
@@ -470,8 +470,8 @@ window.SEATING_DATA = Object.freeze({
         "group": 5,
         "col": 14,
         "excelCol": "P",
-        "company": "車美仕",
-        "name": "蘇立瑋"
+        "company": "興業",
+        "name": "劉乙臻"
       },
       {
         "group": 5,
@@ -491,8 +491,8 @@ window.SEATING_DATA = Object.freeze({
         "group": 5,
         "col": 17,
         "excelCol": "S",
-        "company": "興業",
-        "name": "劉乙臻"
+        "company": "車美仕",
+        "name": "蘇立瑋"
       },
       {
         "group": 6,
@@ -562,7 +562,7 @@ window.SEATING_DATA = Object.freeze({
         "col": 8,
         "excelCol": "J",
         "company": "和泰",
-        "name": "蔡子萱"
+        "name": "吳翊臻"
       },
       {
         "group": 7,
