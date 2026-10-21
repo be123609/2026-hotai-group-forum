@@ -746,12 +746,6 @@ window.SEATING_DATA = Object.freeze({
             "title": "副本部長"
           },
           {
-            "company": "高都",
-            "name": "曾聰仁",
-            "unit": "管理本部",
-            "title": "副本部長"
-          },
-          {
             "company": "產險",
             "name": "許志逢",
             "unit": "管理部",
@@ -782,6 +776,12 @@ window.SEATING_DATA = Object.freeze({
             "title": "部長"
           },
           {
+            "company": "興業",
+            "name": "林思婷",
+            "unit": "協成處",
+            "title": "處長"
+          },
+          {
             "company": "和泰",
             "name": "朱雪菁",
             "unit": "管理部",
@@ -792,7 +792,7 @@ window.SEATING_DATA = Object.freeze({
       {
         "id": 3,
         "label": "第三桌",
-        "count": 10,
+        "count": 9,
         "people": [
           {
             "company": "車美仕",
@@ -819,12 +819,6 @@ window.SEATING_DATA = Object.freeze({
             "title": "部長"
           },
           {
-            "company": "興業",
-            "name": "林思婷",
-            "unit": "協成處",
-            "title": "處長"
-          },
-          {
             "company": "和安",
             "name": "陳美蘭",
             "unit": "管理部",
@@ -837,12 +831,6 @@ window.SEATING_DATA = Object.freeze({
             "title": "次長"
           },
           {
-            "company": "和運",
-            "name": "陳佩君",
-            "unit": "管理部",
-            "title": "部長"
-          },
-          {
             "company": "桃苗",
             "name": "許辰遠",
             "unit": "管理部",
@@ -853,6 +841,12 @@ window.SEATING_DATA = Object.freeze({
             "name": "陳玟伶",
             "unit": "人才發展室",
             "title": "室長"
+          },
+          {
+            "company": "和泰",
+            "name": "李明佳",
+            "unit": "人才發展室",
+            "title": "課長"
           }
         ]
       },
@@ -910,23 +904,23 @@ window.SEATING_DATA = Object.freeze({
             "title": "室長"
           },
           {
-            "company": "和泰",
-            "name": "蔡子萱",
-            "unit": "人才資產運用室",
+            "company": "車美仕",
+            "name": "蘇立瑋",
+            "unit": "管理部財務總務室",
             "title": "室長"
           },
           {
             "company": "和泰",
-            "name": "李明佳",
-            "unit": "人才發展室",
-            "title": "課長"
+            "name": "蔡子萱",
+            "unit": "人才資產運用室",
+            "title": "室長"
           }
         ]
       },
       {
         "id": 5,
         "label": "第五桌",
-        "count": 11,
+        "count": 10,
         "people": [
           {
             "company": "高都",
@@ -962,12 +956,6 @@ window.SEATING_DATA = Object.freeze({
             "company": "和潤",
             "name": "張德福",
             "unit": "管理部總務室",
-            "title": "室長"
-          },
-          {
-            "company": "車美仕",
-            "name": "蘇立瑋",
-            "unit": "管理部財務總務室",
             "title": "室長"
           },
           {
