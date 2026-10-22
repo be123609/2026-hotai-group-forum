@@ -84,7 +84,7 @@
         ["01","活動議程","查看完整活動議程。","agenda.html"],
         ["02","講者介紹","查看專題講者介紹與講題。","speakers.html"],
         ["03","線上報到","填寫活動報到表單。","checkin.html"],
-        ["04","座位圖","座位圖頁面目前暫停開放。","seating.html"],
+        ["04","座位圖","查看會議及晚宴座位圖。","seating.html"],
         ["05","會後資料","填寫滿意度問卷，會後將提供簡報資料參考。","resources.html"],
         ["06","活動地點","查看會議場地及交通資訊。","venue.html"]
       ].map(item=>`<a class="journey-card reveal" href="${item[3]}"><span>${item[0]}</span><h3>${item[1]}</h3><p>${item[2]}</p><b>開啟頁面 ${icons.arrow}</b></a>`).join("")}</div></div></section>
