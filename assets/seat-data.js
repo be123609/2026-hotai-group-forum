@@ -837,6 +837,12 @@ window.SEATING_DATA = Object.freeze({
             "title": "副部長"
           },
           {
+            "company": "南都",
+            "name": "陳亭吟",
+            "unit": "管理部人力資源室",
+            "title": "室長"
+          },
+          {
             "company": "和泰",
             "name": "陳玟伶",
             "unit": "人才發展室",
@@ -914,6 +920,12 @@ window.SEATING_DATA = Object.freeze({
             "name": "蔡子萱",
             "unit": "人才資產運用室",
             "title": "室長"
+          },
+          {
+            "company": "和泰",
+            "name": "柯尹喬",
+            "unit": "人才發展室",
+            "title": "課長"
           }
         ]
       },
@@ -1036,12 +1048,6 @@ window.SEATING_DATA = Object.freeze({
             "name": "徐芳怡",
             "unit": "人才發展室",
             "title": "室長"
-          },
-          {
-            "company": "和泰",
-            "name": "柯尹喬",
-            "unit": "人才發展室",
-            "title": "課長"
           },
           {
             "company": "和泰",
