@@ -13,7 +13,7 @@
     ["agenda", "議程", "agenda.html"],
     ["speakers", "講者", "speakers.html"],
     ["checkin", "報到", "checkin.html"],
-    ["seating", "座位圖", "seating-closed.html"],
+    ["seating", "座位圖", "seating.html"],
     ["resources", "會後資料", "resources.html"],
     ["venue", "活動地點", "venue.html"]
   ];
@@ -61,7 +61,7 @@
       <footer class="footer"><div class="shell footer__grid">
         <div><a class="brand brand--footer" href="index.html" aria-label="和泰汽車首頁識別">${logoMarkup(true)}</a><p>${event.name}<br>${event.timeDisplay}</p></div>
         <div><h2>活動資訊</h2><a href="agenda.html">活動議程</a><a href="speakers.html">講者介紹</a><a href="venue.html">場地與交通</a></div>
-        <div><h2>活動服務</h2><a href="checkin.html">線上報到</a><a href="seating-closed.html">會議／晚宴座位圖</a><a href="resources.html">會後資料</a></div>
+        <div><h2>活動服務</h2><a href="checkin.html">線上報到</a><a href="seating.html">會議／晚宴座位圖</a><a href="resources.html">會後資料</a></div>
         <div><h2>主辦單位</h2><p>${event.organizer}</p></div>
       </div><div class="shell footer__bottom"><span>網站內容更新：2026 年 10 月 19 日</span></div></footer>`;
   }
@@ -84,7 +84,7 @@
         ["01","活動議程","查看完整活動議程。","agenda.html"],
         ["02","講者介紹","查看專題講者介紹與講題。","speakers.html"],
         ["03","線上報到","填寫活動報到表單。","checkin.html"],
-        ["04","座位圖","座位圖頁面目前暫停開放。","seating-closed.html"],
+        ["04","座位圖","座位圖頁面目前暫停開放。","seating.html"],
         ["05","會後資料","填寫滿意度問卷，會後將提供簡報資料參考。","resources.html"],
         ["06","活動地點","查看會議場地及交通資訊。","venue.html"]
       ].map(item=>`<a class="journey-card reveal" href="${item[3]}"><span>${item[0]}</span><h3>${item[1]}</h3><p>${item[2]}</p><b>開啟頁面 ${icons.arrow}</b></a>`).join("")}</div></div></section>
