@@ -144,7 +144,23 @@ function renderDinnerMap() {
     const survey = config.integrations.surveyCakeUrl;
     return `<main id="main-content">${pageIntro("Feedback & Resources", "會後資料")}
       <section class="section"><div class="shell resource-page"><section class="survey-card reveal"><div class="survey-card__icon">${icons.document}</div><div><span class="status status--ready">問卷連結</span><p class="kicker">SurveyCake</p><h2>滿意度調查問卷</h2><p>感謝參與 ${event.name}。請於活動後填寫問卷，協助主辦單位持續改善活動內容與體驗。</p><a class="button button--primary" href="${survey}" target="_blank" rel="noopener noreferrer">前往填寫問卷 ${icons.arrow}</a><small>連結將於新分頁開啟。</small></div></section>
-        <section class="presentation-section reveal"><div class="section-heading"><div><p class="kicker">活動資料</p><h2>會後簡報</h2></div><p>簡報下載將於會後提供。</p></div><div class="presentation-grid">${config.presentations.map((title,index)=>`<article><span>0${index+1}</span><h3>${title}</h3><button class="button button--disabled" type="button" disabled>會後提供</button></article>`).join("")}</div></section>
+        <section class="presentation-section reveal"><div class="section-heading"><div><p class="kicker">活動資料</p><h2>會後簡報</h2></div><p>簡報下載將於會後提供。</p></div><div class="presentation-grid">${config.presentations.map((title,index)=>{
+  const files = [
+    "safety-leadership.pdf",
+    "ai-workplace.pdf",
+    null,
+    null,
+    null
+  ];
+  return `<article>
+    <span>0${index+1}</span>
+    <h3>${title}</h3>
+    ${files[index]
+      ? `<a class="button button--primary" href="./assets/files/${files[index]}" download>下載簡報</a>`
+      : `<button class="button button--disabled" type="button" disabled>會後提供</button>`
+    }
+  </article>`;
+}).join("")}</div></section>
       </div></section>
     </main>`;
   }
