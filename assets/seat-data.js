@@ -400,8 +400,8 @@ window.SEATING_DATA = Object.freeze({
         "group": 5,
         "col": 1,
         "excelCol": "C",
-        "company": "國瑞",
-        "name": "陳燁瑩"
+        "company": "和運",
+        "name": "李威毅"
       },
       {
         "group": 5,
@@ -421,8 +421,8 @@ window.SEATING_DATA = Object.freeze({
         "group": 5,
         "col": 4,
         "excelCol": "F",
-        "company": "和運",
-        "name": "李威毅"
+        "company": "國瑞",
+        "name": "陳燁瑩"
       },
       {
         "group": 5,
@@ -792,7 +792,7 @@ window.SEATING_DATA = Object.freeze({
       {
         "id": 3,
         "label": "第三桌",
-        "count": 9,
+        "count": 10,
         "people": [
           {
             "company": "車美仕",
@@ -999,7 +999,7 @@ window.SEATING_DATA = Object.freeze({
       {
         "id": 6,
         "label": "第六桌",
-        "count": 10,
+        "count": 9,
         "people": [
           {
             "company": "高都",
