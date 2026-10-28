@@ -148,9 +148,9 @@ function renderDinnerMap() {
   const files = [
     "safety-leadership.pdf",
     "ai-workplace.pdf",
-    null,
-    null,
-    null
+    "talent-assets.pdf",
+    "talent-development.pdf",
+    "general-affairs-safety.pdf"
   ];
   return `<article>
     <span>0${index+1}</span>
